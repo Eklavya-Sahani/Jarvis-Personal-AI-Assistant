@@ -1,4 +1,6 @@
 venv
 .idea
 Openai
-*.pyc 
+.env
+__pycache__/
+*.pyc
