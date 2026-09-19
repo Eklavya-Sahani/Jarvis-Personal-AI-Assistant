@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jarvis - Personal AI Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+
+            <div class="logo-circle">
+                J
+            </div>
+
+            <div>
+                <h1>JARVIS</h1>
+                <p>Personal AI Assistant</p>
+            </div>
+
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            <span>Online</span>
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="orb-container">
+
+                <div class="orb">
+
+                    <div class="orb-inner">
+                        J
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h2>Hello, Eklavya</h2>
+
+            <p class="subtitle">
+                How can I help you today?
+            </p>
+
+        </section>
+
+
+        <!-- Chat -->
+        <section class="chat-container">
+
+            <div id="chatMessages" class="chat-messages">
+
+                <!-- Initial Jarvis message -->
+                <div class="message jarvis-message">
+
+                    <div class="avatar">
+                        J
+                    </div>
+
+                    <div class="message-content">
+
+                        <div class="message-name">
+                            Jarvis
+                        </div>
+
+                        <div class="message-text">
+                            Hello Eklavya! I'm Jarvis. How can I assist you?
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Input -->
+            <div class="input-container">
+
+                <button
+                    id="micButton"
+                    class="icon-button mic-button"
+                    title="Speak to Jarvis"
+                    type="button"
+                >
+                    🎙️
+                </button>
+
+                <input
+                    id="messageInput"
+                    type="text"
+                    placeholder="Ask Jarvis anything..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="sendButton"
+                    class="send-button"
+                    type="button"
+                >
+                    Send
+                </button>
+
+            </div>
+
+
+            <!-- Listening status -->
+            <div
+                id="listeningStatus"
+                class="listening-status"
+            >
+                Click the microphone to speak
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            Powered by OpenRouter • Built with FastAPI
+        </p>
+
+    </footer>
+
+</div>
+
+
+<!-- JavaScript -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>
